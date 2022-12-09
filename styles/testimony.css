@@ -1,0 +1,20 @@
+.testimonies-container {
+  border-top: solid 1px gray;
+  margin-top: 20px;
+}
+.testimony-title {
+  font-size: 22px;
+  text-align: center;
+  padding: 5px 0 0 0;
+  height: 30px;
+}
+.statement-container {
+  height: 240px;
+  margin: 2px 30px 2px 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+}
+.testimony {
+  height: 250px;
+
+}

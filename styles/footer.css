@@ -1,0 +1,24 @@
+.footer {
+  border-top: solid 1px gray;
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  align-items: top;
+  height: 100px;
+  position: relative;
+  z-index: 1;
+  margin-top: 10px;
+}
+.contactus {
+  font-size: 15px;
+  margin-left: 20px;
+  margin-top: 8px;
+}
+.connect-logo {
+  height: 25px;
+  cursor: pointer;
+  transition: 1s;
+}
+.connect-logo:hover {
+  background-color: rgb(172, 171, 171);
+}

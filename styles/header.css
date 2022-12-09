@@ -1,0 +1,55 @@
+.header-container {
+  background-color: rgb(231, 195, 147);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+/* Left Section */
+.left-section {
+  display: flex;
+  justify-content: center;
+}
+.Glowup-logo {
+  height: 160px;
+  margin-left: 15px;
+  padding: 10px 10px 10px;
+}
+
+/* Center Section */
+.center-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navagation-container {
+  position: fixed;
+  top: 110px;
+  left: 0px;
+  right: 0px;
+  height: 60px;
+  z-index: 1;
+}
+.nav-button {
+  font-family: Arial;
+  font-size: 18px;
+  background-color: rgb(231, 195, 147);
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  transition: 1s;
+}
+.nav-button:hover {
+  background-color: rgb(218, 214, 214);
+}
+
+@media ( max-width: 906px) {
+  .header-container {
+   grid-template-columns: 1fr;
+   }
+  }

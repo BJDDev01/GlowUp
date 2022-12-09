@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Glow Up </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/services.css">
+    <link rel="stylesheet" href="styles/testimony.css"> 
+    <link rel="stylesheet" href="styles/joinus.css">
+    <link rel="stylesheet" href="styles/footer.css"> 
+    <link rel="stylesheet" href="styles/finalfooter.css"> 
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <!--This is Header-->
+      <div class="header-container" >
+        <div class="left-section">
+          <img class="Glowup-logo" src="picture/Logo/Glowup-logo.jpg">
+        </div>
+        <div class="center-section">
+          <div>
+            <button class="nav-button">
+              <a href="#MC">About </a>
+            </button>
+    
+            <button class="nav-button"> 
+            <a href="#PS">Services </a>
+            </button>
+    
+            <button class="nav-button"> 
+              <a href="#TT">Testimonies </a>
+            </button>
+    
+            <button class="nav-button"> 
+              <a href="#JU">Join Us!</a>
+            </button>
+    
+            <button class="nav-button"> 
+              <a href="#CU">Contact Us</a>
+            </button>
+          </div>
+        </div>
+      </div> 
+
+    <!--This is Section1 Area-->
+    <div class="slide-section">
+      <div class="slideshow-container">
+        <div class="mySlides1">
+          <img src="picture/Slides/BB Glow.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides1">
+          <img src="picture/Slides/Derma Pen.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides1">
+          <img src="picture/Slides/Microshading.jpg" style="width:100%">
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      </div>
+  
+      <script>
+        let slideIndex = [1,1];
+        let slideId = ["mySlides1"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+  
+        function plusSlides(n, no) {
+        showSlides(slideIndex[no] += n, no);
+       }
+       
+       function showSlides(n, no) {
+        let i;
+        let x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) {slideIndex[no] = 1}    
+        if (n < 1) {slideIndex[no] = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        x[slideIndex[no]-1].style.display = "block";  
+       }
+      </script>
+    </div>
+
+    <!--This is Service Area-->
+    <div class="article-area" id="PS">
+      <div class="services-header">
+          Service Offer!!!
+      </div>
+      <div class="service-list">
+        <div class="service-container">
+          <div>
+            <img class="services-image" src="picture/Services/6D Microblading.jpg">
+          </div>
+          <div class="price">
+            &#8369 1,899.00 only for 2 session!
+          </div>
+        </div>
+        <div class="service-container">
+          <div>
+            <img class="services-image" src="picture/Services/BB Glow.jpg">
+          </div>
+          <div class="price">
+            &#8369 2,999.00 only for 2 session!
+          </div>
+        </div>
+        <div class="service-container">
+          <div>
+            <img class="services-image" src="picture/Services/Derma Pen.jpg">
+          </div>
+          <div class="price">
+            &#8369 3,499.00 only for 2 session!
+          </div>
+        </div>
+          <div class="service-container">
+          <div>
+            <img class="services-image" src="picture/Services/Microshading.jpg">
+          </div>
+          <div class="price">
+            &#8369 2,499.00 only for 2 session!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- This is Testemonials Area-->
+    <div class="testimonies-container">
+      <div class="testimony-title" id="TT">
+          Testimonies
+      </div>
+      <div class="statement-container">
+        <div class="testimony">1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+    </div>
+
+    <!-- This is Join Us Area -->
+    <div class="join-container">
+      <div class="joinus" id="JU"> 
+        Joine Us!!! <br>
+      </div>
+      <div class="joinus-tag">
+        Be part of our team and Earn on your own flixeble time.
+      </div>
+      <div class="resume">
+        Send your Resume with done services. <br>
+        Email: hr@ibrows.com.ph <br>
+        Viber: 0906-378-3637 <br>
+        Call or Text: 0906-378-3637
+      </div>
+    </div>
+
+    <!--Contact Us Area-->
+    <div class="footer">
+      <div class="contactus" id="CU">
+        Contact Us <br>
+        I Brows & Lashes Inc.<br>
+        Mobile: 0906-378-3637 <br>
+        Viber: 0906-378-3637 <br>
+        Email: admin@ibrows.com.ph
+      </div>
+      <div class="contactus">
+        Connect with Us<br>
+        <div class="contactus">
+          <div>
+            <img class="connect-logo" src="picture/connect-logo/Facebook-logo.png">
+            <img class="connect-logo" src="picture/connect-logo/Tiktok_Logo.png">
+            <img class="connect-logo" src="picture/connect-logo/Instagram-Logo.png">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final Footer-->
+    <div class="finalfooter">
+      <div class="copyright">
+        Copyright © 2022 I Brows & Lashes Inc. All rights reserved.
+      </div>
+    </div>
+  </body>
+</html>
